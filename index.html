@@ -5,11 +5,8 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <script>
     $(function() {
-      $.get({
-        url: "vavi.js"
-        ,success: function(data) {
-          $('#bookmarklet').attr('href', data);
-        }
+      $.get("vavi.js", function(data) {
+        $('#bookmarklet').attr('href', data);
       });
     });
   </script>
