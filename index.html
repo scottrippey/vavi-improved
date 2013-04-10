@@ -2,6 +2,17 @@
 <html>
 <head>
   <title> Vavi Improved by Scott Rippey </title>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>
+    $(function() {
+      $.get({
+        url: "vavi.js"
+        ,success: function(data) {
+          $('#bookmarklet').attr('href', data);
+        }
+      });
+    });
+  </script>
 </head>
 <body>
   <h2>Vavi Improved</h2>
